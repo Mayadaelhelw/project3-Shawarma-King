@@ -1,0 +1,270 @@
+.nav{
+    background-color: #1C1C1C;
+}
+.collapse ul li{
+    color: white;
+}
+.navbar .nav-link.active {
+  color: white !important;
+}
+                          /* section1 home  */
+.carousel-item img {
+  width: 100%;
+  height: 100vh;      
+  object-fit: cover;   
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+  padding: 10px;
+}
+              /* icon */
+.social-icons a {
+  background-color: #ffc107; 
+  color: #000;               
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.social-icons a:hover {
+  background-color: #ff9800; 
+  color: #fff;
+}
+                            /* section5 */
+  .section-img{
+  width: auto;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url(../imges/4.jpg) no-repeat fixed bottom;
+   background-size: cover;
+  position: relative;
+   padding: 200px 0; 
+  color: #fff;
+  text-align: center;
+  
+}
+                              /* section6  */
+.food-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+   height: 100%;
+}
+.food-card:hover {
+  transform: translateY(-5px);
+}
+.food-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.card-body-custom {
+  padding: 20px;
+  background: #fff;
+  position: relative;
+}
+.show-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-weight: bold;
+}
+.food-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,193,7,0.4);
+  transition: 0.6s;
+}
+.food-card::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  transition: 0.6s;
+}
+.food-card:hover::before {
+  top: 0;
+  left: 0;
+}
+.food-card:hover::after {
+  bottom: 0;
+  right: 0;
+}     
+                                /* section7 */
+  .section-img1{
+  width: auto;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url(../imges/pexels-sohelripon-25440678.jpg) no-repeat fixed bottom;
+   background-size: cover;
+  position: relative;
+   padding: 200px 0; 
+  color: #fff;
+  text-align: center;
+}
+.bg-light {
+    background-color: #e9ecef !important;
+}
+.rounded-5 {
+    border-radius: 2rem !important;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+.position-absolute.top-50 {
+    left: 15px !important;
+}
+                                    /* section8 */
+.thanks-card {
+  position: relative;
+  height: 260px;
+  border-radius: 25px;
+  overflow: hidden;
+  color: #fff;
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.thanks-card .bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(55%);
+}
+.thanks-card .content {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+}
+.top-title {
+  font-style: italic;
+  font-weight: 600;
+}
+.date {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 20px;
+}
+.person img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+.person h5 {
+  margin: 0;
+  font-size: 16px;
+}
+.person span {
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.8;
+}
+.thanks-card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+                                     /* section9 */
+.news-box {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.news-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f5a400;
+}
+.news-date {
+  font-size: 15px;
+  color: #666;
+}
+.news-line {
+  width: 70px;
+  height: 4px;
+  background: #f5a400;
+  margin: 15px 0 25px;
+}
+.news-text {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #333;
+}
+.img-box {
+  height: 100%;
+  overflow: hidden; 
+  clip-path: polygon(0.0% 0.0%, 100.0% 0.0%, 100.0% 100.0%, 20.9% 100.0%); 
+}
+.img-box2 {
+  height: 100%;
+  overflow: hidden; 
+  clip-path: polygon(0.0% 0.0%, 100.0% 0.0%, 71.9% 100.0%, 0.0% 100.0%);
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.img-box:hover img {
+  transform: scale(1.1);
+}
+.clipped-image , .clipped-image2 {
+    width: 500px;         
+    height: 300px;       
+    background-size: cover;       
+    background-position: center;  
+}
+                              /* section10 */
+.social-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6); 
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.social-card:hover {
+ transform: translateY(-5px);
+}
+.social-icon {
+ width: 50px;
+ height: 50px;
+  margin: 15px auto;
+}
+.subscribe-text {
+  font-style: italic;
+  font-weight: bold;
+  color: #555;
+}

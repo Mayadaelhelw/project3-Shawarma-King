@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<head>
+    <title>Shawarma King</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/all.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+                      <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top ">
+      <div class="container-fluid nav">
+          <a class="navbar-brand d-flex align-items-center fw-bold text-warning fs-3" href="#">
+             <img src="imges/logo.png"
+              alt="logo" style="width:80px; height:auto;" class="me-2">
+              Shawarma King
+          </a>
+     <span class="mx-3 border-start" style="height:40px"></span>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     <div class="collapse navbar-collapse  " id="navbarNav">
+         <ul class="navbar-nav mb-2 mb-lg-0">
+             <li class="nav-item">
+                 <a class="nav-link active" href="#">Home</a>
+             </li>
+             <li class="nav-item">
+                  <a class="nav-link active" href="#">About Us</a>
+             </li>
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle border border-warning rounded px-3 active"
+                 href="#" role="button" data-bs-toggle="dropdown">
+                 Menu
+                  </a>
+                  <ul class="dropdown-menu mt-2 shadow">
+                      <li><a class="dropdown-item" href="#">Chicken Shawarma</a></li>
+                      <li><a class="dropdown-item" href="#">Meat Shawarma</a></li>
+                       <li><a class="dropdown-item" href="#">Kebab</a></li>
+                      <li><a class="dropdown-item" href="#">Kofta</a></li>
+                     <li><a class="dropdown-item" href="#">Mixed Grill</a></li>
+                      <li><a class="dropdown-item" href="#">More...</a></li>
+                 </ul>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link active" href="#">Contact</a>
+             </li>
+            </ul>
+
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-warning me-2" type="submit">Search</button>
+       <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login
+       </button>
+      </form>
+    </div> <!-- container-fluid -->
+</nav>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login / Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-warning w-100">Login</button>
+        </form>
+        <hr>
+        <p class="text-center">Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </div> 
+  </div>
+</div>
+                    <!--..... section1 home....... -->
+    <div id="shawarmaCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+         <button type="button" data-bs-target="#shawarmaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#shawarmaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#shawarmaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+         <div class="carousel-item active">
+             <img src="imges/1.jpg" class="d-block w-100 " alt="Shawarma 1">
+              <div class="carousel-caption d-none d-md-block bg-overlay">
+                  <h2 class="fw-bold text-warning">GRILLED STEAK</h2>
+                 <p class="text-white">Flame-grilled to perfection — juicy, smoky, and unforgettable.</p>
+                  <a href="#menu" class="btn btn-warning btn-lg mt-3">Look at the menu</a> 
+              </div>
+         </div>
+         <div class="carousel-item">
+             <img src="imges/2.jpg" class="d-block w-100" alt="Shawarma 2">
+              <div class="carousel-caption d-none d-md-block bg-overlay">
+                  <h2 class="fw-bold text-warning">GRILLED STEAK</h2>
+                   <p class="text-white">Flame-grilled to perfection — juicy, smoky, and unforgettable.</p>
+                   <a href="#menu" class="btn btn-warning btn-lg mt-3">Look at the menu</a>
+             </div>
+         </div>
+         <div class="carousel-item">
+             <img src="imges/3.jpg" class="d-block w-100" alt="Shawarma 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="fw-bold text-warning">SHAWARMA</h2>
+                  <p class="text-white">Middle Eastern flavor wrapped in fire-roasted goodness.</p>
+                  <a href="#menu" class="btn btn-warning btn-lg mt-3">Look at the menu</a>
+              </div>
+         </div>
+     </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#shawarmaCarousel" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#shawarmaCarousel" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+     </button>
+  </div>
+               <!-- icon -->
+   <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+                       <!-- .....section2.....  -->
+<section class="py-5 text-white" style="background: linear-gradient(to right, #3e3e3e, #1c1c1c);">
+  <div class="container text-start">
+    <h1 class="text-warning fw-bold">Welcome</h1>
+    <p class="lead text-light">
+      Welcome to <span class="text-warning">Shawarma King</span> — your gateway to sizzling grills and bold Middle Eastern flavors. 
+      Whether you're craving juicy shawarma, flame-grilled steak, or vibrant sides — we serve passion and comfort in every bite.
+    </p>
+    <a href="#menu" class="btn btn-warning btn-lg mt-3">Learn More</a>
+  </div>
+</section><hr>
+                     <!--..... section3 .....  -->
+  <section class="py-5 text-white" style="background: linear-gradient(to right, #3e3e3e, #1c1c1c);">
+     <div class="container text-start">
+         <h1 class="text-warning fw-bold">The Most Famous Dishes In Our Restaurant</h1>
+     </div>
+  </section><br>
+  <section class="py-5 text-white" style="background-color: #3e3e3e;">
+     <div class="container">
+         <div class="accordion" id="famousDishes">
+              <div class="accordion-item bg-dark text-white">
+                 <h2 class="accordion-header" id="headingOne">
+                   <button class="accordion-button collapsed bg-dark text-warning" 
+                       type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseOne" aria-expanded="false" 
+                       aria-controls="collapseOne">
+                      Fried Chicken
+                  </button>
+                 </h2>
+                 <div id="collapseOne" class="accordion-collapse collapse" 
+                     aria-labelledby="headingOne" data-bs-parent="#famousDishes">
+                     <div class="accordion-body">
+                       Crispy, golden, and seasoned to perfection — our fried chicken is a customer favorite.
+                 </div><!-- accordion-collapse -->
+             </div><!-- accordion-item -->
+          </div><!-- accordion -->
+          <div class="accordion-item bg-dark text-white">
+             <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed bg-dark text-warning" 
+                  type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseTwo" aria-expanded="false" 
+                  aria-controls="collapseTwo">
+                  Types of Salad
+               </button>
+              </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" 
+                  aria-labelledby="headingTwo" data-bs-parent="#famousDishes">
+                  <div class="accordion-body">
+                    Fresh, colorful, and full of flavor — from classic Caesar to vibrant Mediterranean mixes.
+                  </div>
+              </div><!-- accordion-collapse -->
+          </div><!-- accordion-item -->
+          <div class="accordion-item bg-dark text-white">
+              <h2 class="accordion-header" id="headingThree">
+             <button class="accordion-button collapsed bg-dark text-warning" 
+                  type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseThree" aria-expanded="false" 
+                  aria-controls="collapseThree">
+                 Types of Pizza
+              </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" 
+                  aria-labelledby="headingThree" data-bs-parent="#famousDishes">
+                  <div class="accordion-body">
+                     From cheesy classics to spicy shawarma-topped creations — our pizzas redefine fast flavor.
+                 </div>
+              </div>
+         </div>
+      </div>
+   </section><hr>
+                         <!-- .....section4..... -->
+   <section class="py-5" style="background-color: #3e3e3e;">
+      <div class="container">
+         <h2 class="text-warning fw-bold mb-4">Translate from Arabic to English</h2>
+         <div class="mb-3">
+             <label for="translateInput" class="form-label text-white">Write And Translate Press Here:</label>
+             <textarea class="form-control" id="translateInput" rows="5" placeholder="translate:"></textarea>
+         </div>
+         <div class="d-flex gap-3 mb-4">
+             <button class="btn btn-warning">Translate</button>
+             <button class="btn btn-secondary" onclick="showCopyModal()">Copy</button>
+          </div>
+         <div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-warning" id="copyModalLabel">Restaurant</h5>
+                           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                     <div class="modal-body">The message copied </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+                         </div>
+                     </div>
+                   </div>
+              </div>  
+          </div>
+    </section><hr>
+
+    <section class="py-5" style="background-color: #3e3e3e;">
+      <div class="container">
+         <h2 class="text-warning fw-bold mb-4">Translate from Arabic to French</h2>
+         <div class="mb-3">
+             <label for="translateInput" class="form-label text-white">Write And Translate Press Here:</label>
+             <textarea class="form-control" id="translateInput" rows="5" placeholder="translate:"></textarea>
+         </div>
+         <div class="d-flex gap-3 mb-4">
+             <button class="btn btn-warning">Translate</button>
+             <button class="btn btn-secondary" onclick="showCopyModal()">Copy</button>
+          </div>
+         <div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-warning" id="copyModalLabel">Restaurant</h5>
+                           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                     <div class="modal-body">The message copied </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+                         </div>
+                     </div>
+                   </div>
+              </div>  
+          </div>
+    </section><hr>
+
+    <section class="py-5" style="background-color: #3e3e3e;">
+      <div class="container">
+         <h2 class="text-warning fw-bold mb-4">Translate from Arabic to German</h2>
+         <div class="mb-3">
+             <label for="translateInput" class="form-label text-white">Write And Translate Press Here:</label>
+             <textarea class="form-control" id="translateInput" rows="5" placeholder="translate:"></textarea>
+         </div>
+         <div class="d-flex gap-3 mb-4">
+             <button class="btn btn-warning">Translate</button>
+             <button class="btn btn-secondary" onclick="showCopyModal()">Copy</button>
+          </div>
+         <div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-warning" id="copyModalLabel">Restaurant</h5>
+                           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                     <div class="modal-body">The message copied </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+                         </div>
+                     </div>
+                   </div>
+              </div>  
+          </div>
+    </section><hr>
+                            <!-- .....section5..... -->
+    <div class="Section">
+        <div class="section-img"> </div>
+    </div><br>
+                                <!--..... section6..... -->
+    <section class="py-4  text-center text-white " style="background-color: #3e3e3e;">
+        <h2 class="m-0">..Popular Grills & Shawarma Dishes..</h2>
+     </section> 
+  <div class="container my-5">
+    <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card">
+        <img src="imges/Grilled-Chicken-Shawarma-Kabobs-4.jpg">
+        <div class="overlay card-body-custom">
+          <h5>Chicken Shawarma</h5>
+          <p>
+            Tender slices of chicken marinated in oriental spices, slow-roasted on the grill,
+            served juicy and full of flavor with a rich smoky taste.
+          </p><br>
+          <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card ">
+        <img src="imges/9KLfDHicu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4ySQ7QNfb0LjBzMi7OcXQ0joyIyA2LrMgM8jAJNCgz8i519fD3Noo0DnR19c5I8s9JVCsGAFUrJRE">
+        <div class="overlay card-body-custom">
+          <h5>Meat Shawarma</h5>
+          <p>
+           Premium beef shawarma seasoned with authentic Middle Eastern spices,
+           grilled to perfection and packed with bold, delicious flavors.
+         </p><br>
+           <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card">
+        <img src="imges/shawarmachickenskewers-15.jpg">
+        <div class="overlay card-body-custom">
+          <h5>Grilled Chicken</h5>
+          <p>
+            Traditional minced beef kebab mixed with onions and spices,
+            charcoal-grilled for a deep smoky flavor and tender texture.
+         </p><br>
+          <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1598514983318-2f64f8f4796c">
+        <div class="overlay card-body-custom">
+          <h5>Kebab</h5>
+          <p>
+           Traditional minced beef kebab mixed with onions and spices,
+           charcoal-grilled for a deep smoky flavor and tender texture.
+         </p><br>
+           <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card">
+        <img src="imges/lamb-beef-koftas-5-697x1024.jpg">
+        <div class="overlay card-body-custom">
+          <h5>Kofta</h5>
+          <p>
+            Juicy kofta made from seasoned minced meat and fresh herbs,
+            grilled slowly for a rich taste and irresistible aroma.
+         </p><br>
+          <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card">
+        <img src="imges/71a17998-d5ef-458c-878d-c5800aea5ccc.avif">
+        <div class="overlay card-body-custom">
+          <h5>Mixed Grill</h5>
+          <p>
+            A delicious combination of kebab, kofta, and grilled chicken,
+            served hot with a perfect balance of smoky and savory flavors.
+         </p><br>
+          <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-2">
+    <div class="col-lg-4 col-md-6 ">
+      <div class="food-card">
+        <img src="imges/pngtree-delicious-shawarma-plate-with-grilled-chicken-and-fresh-vegetables-png-image_19564935.png">
+        <div class="overlay card-body-custom">
+          <h5>Shawarma Meal</h5>
+          <p>
+            A complete shawarma meal served with crispy fries, fresh salad,
+            and special sauces for a satisfying and filling experience.
+         </p><br>
+          <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="food-card">
+        <img src="imges/sauced-pork-ribs-on-a-baoking-sheet.jpg">
+        <div class="overlay card-body-custom">
+          <h5>Grilled Ribs</h5>
+          <p>
+           Slow-grilled beef ribs marinated in special spices,
+           tender, juicy, and packed with a rich smoky taste.
+         </p><br>
+           <a href="#" class="btn btn-warning show-btn">SHOW</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+                       <!-- .....section7..... -->
+    <div class="Section">
+        <div class="section-img1"> </div>
+    </div><br>
+                      
+    <section class="py-4  text-center text-white " style="background-color: #3e3e3e;">
+        <h2 class="m-0">..Thanks For..</h2>
+     </section> 
+                             <!-- .....section8 ..... -->
+ <div class="container my-5">
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-4 col-md-6">
+      <div class="thanks-card">
+        <img src="imges/person3.jpg" class="bg-img">
+        <div class="content">
+          <h6 class="top-title">All Thanks And Appreciation</h6>
+          <div class="date">
+            <i class="bi bi-clock"></i> June 22, 2023
+          </div>
+          <div class="person">
+            <img src="imges/4.jpg">
+            <div>
+              <h5>Chef / Mohamed Radi</h5>
+              <span>Shawarma Teacher</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="thanks-card">
+        <img src="imges/person5.jpg" class="bg-img">
+        <div class="content">
+          <h6 class="top-title">All Thanks And Appreciation</h6>
+          <div class="date">
+            <i class="bi bi-clock"></i> June 22, 2023
+          </div>
+          <div class="person">
+            <img src="imges/person5.jpg">
+            <div>
+              <h5>Chef / Salem Mohammed</h5>
+              <span>Content Creator</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="thanks-card">
+        <img src="imges/person6.jpg" class="bg-img">
+        <div class="content">
+          <h6 class="top-title">All Thanks And Appreciation</h6>
+          <div class="date">
+            <i class="bi bi-clock"></i> June 22, 2023
+          </div>
+          <div class="person">
+            <img src="imges/person6.jpg">
+            <div>
+              <h5>Eng. Amjad Fathy</h5>
+              <span>Quality Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                      <!-- ..... section9 .....-->
+  <section class="container my-5">
+  <h2 class="text-center fw-bold mb-5 text-secondary">Grill News</h2>
+  <div class="news-box mb-5">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-7 p-5">
+        <h2 class="news-title">Chicken Shawarma with Bell Peppers</h2>
+        <span class="news-date">Fresh & Juicy</span>
+        <div class="news-line"></div>
+        <p class="news-text">
+         Fresh chicken pieces seasoned with the finest blend of special Eastern spices, carefully cooked to retain their juice and flavor. Fresh bell pepper slices are added for a touch of sweetness and crunch. The shawarma is served in soft Arabic bread, with creamy yogurt sauce, fresh tomatoes, and lettuce, for a complete taste experience that takes you straight to the heart of Eastern cuisine.
+        </p>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-heart"></i> Add to Favorites </button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-share"></i> Share </button>
+      </div>
+      <div class="col-lg-5 img-box">
+        <img src="imges/00.jpg"
+             alt="Chicken Shawarma" class="clipped-image">
+      </div>
+    </div>
+  </div>
+
+  <div class="news-box mb-5">
+    <div class="row g-0 align-items-center flex-row-reverse">
+      <div class="col-lg-7 p-5">
+        <h2 class="news-title">Grilled Cheese Stuffed Kofta</h2>
+        <span class="news-date">Cheesy Delight</span>
+        <div class="news-line"></div>
+        <p class="news-text">
+          Kofta rich with fresh, carefully minced meat, stuffed with melted cheese to give you a unique taste experience. Grilled over charcoal to release a tempting aroma, crispy on the outside and tender on the inside. Perfect for fans of rich and diverse flavors, it can be served with spicy tomato sauce or yogurt sauce to complete the meal perfectly.
+        </p>
+         <button class="btn btn-warning me-2"> <i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-heart"></i> Add to Favorites </button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-share"></i> Share </button>
+      </div>
+      <div class="col-lg-5 img-box img-box2">
+        <img src="imges/11-scaled.jpg"
+             alt="Meat Shawarma" class="clipped-image2">
+      </div>
+    </div>
+  </div>
+
+  <div class="news-box mb-5">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-7 p-5">
+        <h2 class="news-title">Honey Lemon Shish Tawook</h2>
+        <span class="news-date">Sweet & Tangy</span>
+        <div class="news-line"></div>
+        <p class="news-text">
+         Medium-sized chicken pieces marinated in a special blend of fresh honey and natural lemon juice, giving the meat a balanced sweet and tangy flavor. Grilled over charcoal to create a delicious golden crust while keeping the inside juicy. Perfect with hot Arabic bread and a tomato and lettuce salad, making a complete meal that combines great taste with an appetizing presentation.
+        </p>
+         <button class="btn btn-warning me-2"> <i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-heart"></i> Add to Favorites </button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-share"></i> Share </button>
+      </div>
+      <div class="col-lg-5 img-box">
+        <img src="imges/22-1.jpg"
+             alt="Mixed Grill" class="clipped-image">
+      </div>
+    </div>
+  </div>
+
+  <div class="news-box   mb-5">
+    <div class="row g-0 align-items-center flex-row-reverse">
+      <div class="col-lg-7 p-5">
+        <h2 class="news-title">Grilled Aleppo Sausage</h2>
+        <span class="news-date">Spicy & Smoky</span>
+        <div class="news-line"></div>
+        <p class="news-text">
+          Traditional Aleppo sausage made from the finest fresh meats and special spices, giving you an irresistible rich flavor. It is charcoal-grilled to acquire a distinctive smoky taste while retaining its natural juiciness in every bite. Served with fresh Arabic bread and seasonal vegetables, making it an ideal choice for meat lovers and fans of authentic Eastern flavors.
+        </p>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-heart"></i> Add to Favorites </button>
+        <button class="btn btn-warning me-2"> <i class="fa-solid fa-share"></i> Share </button>
+      </div>
+      <div class="col-lg-5 img-box img-box2">
+        <img src="imges/33.jpg"
+             alt="Grilled Ribs" class="clipped-image2">
+      </div>
+    </div>
+  </div>
+</section>
+                     <!--.....  section10 .....-->
+  <div class="bg-light py-5">
+    <div class="container">
+     <div class="row g-4 justify-content-center"> 
+        <div class="col-md-3 col-sm-6">
+            <div class="card social-card h-100">
+                <p class="subscribe-text">Subscribe Now</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="social-icon" alt="WhatsApp">
+                <a href="#" class="btn btn-link mt-auto">Go To Link</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card social-card h-100">
+                <p class="subscribe-text">Subscribe Now</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" class="social-icon" alt="Instagram">
+                <a href="#" class="btn btn-link mt-auto">Go To Link</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card social-card h-100">
+                <p class="subscribe-text">Subscribe Now</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" class="social-icon" alt="LinkedIn">
+                <a href="#" class="btn btn-link mt-auto">Go To Link</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card social-card h-100">
+                <p class="subscribe-text">Subscribe Now</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" class="social-icon" alt="Twitter">
+                <a href="#" class="btn btn-link mt-auto">Go To Link</a>
+            </div>
+        </div>
+     </div>
+   </div>
+  </div>
+              <!-- ................ -->
+  <footer class=" text-white pt-5 pb-3 mt-5 shadow-lg" style="background-color: #1C1C1C;">
+    <div class="container text-center">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <img src="imges/logo.png" alt="Logo" class="rounded-circle border border-dark bg-white" style="width: 80px;">
+                </div>
+                <h5 class="fst-italic fw-bold border-bottom pb-2 d-inline-block"> Shawarma King Company</h5>
+                <div class="mt-3 small">
+                    <p class="mb-1">Tel: 010-000-000</p>
+                    <p class="mb-1">Address: EGYPT, Cairo</p>
+                    <p class="mb-1">Working Hours: 12PM - 2AM</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <img src="imges/computer-icons-meal-food-meal-icon.jpg" alt="Logo" class="rounded-circle border border-dark bg-white" style="width: 80px;">
+                </div>
+                <h5 class="fst-italic fw-bold border-bottom pb-2 d-inline-block">Important Links</h5>
+                <ul class="list-unstyled mt-3 small">
+                    <li><a href="#" class="text-white text-decoration-none">Order Online</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Our Menu</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Track Your Order</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <img src="imges/6153979.png" alt="Logo" class="rounded-circle border border-dark bg-white" style="width: 80px;">
+                </div>
+                <h5 class="fst-italic fw-bold border-bottom pb-2 d-inline-block">Our Vision</h5>
+                <div class="mt-3 small">
+                    <p class="mb-1">Best BBQ in Town</p>
+                    <p class="mb-1">Fresh Ingredients Daily</p>
+                    <p class="mb-1">You Will Taste The Difference</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4 bg-light">
+        <div class="row">
+          <div class="text-center mt-4">
+            <p class="small text-warning fw-bold">
+              &copy; 2025 FoodExpress. All Rights Reserved. Designed By Eng/ Mayada Abd elmaged ElHelw
+            </p>
+          </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+  function showCopyModal(){
+    var myModal = new bootstrap.Modal(document.getElementById('copyModal'));
+    myModal.show();
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
